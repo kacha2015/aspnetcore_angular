@@ -3,13 +3,13 @@ using Abp.Zero.EntityFrameworkCore;
 using ExampleOne.Authorization.Roles;
 using ExampleOne.Authorization.Users;
 using ExampleOne.MultiTenancy;
+using ExampleOne.Products;
 
 namespace ExampleOne.EntityFrameworkCore
 {
     public class ExampleOneDbContext : AbpZeroDbContext<Tenant, Role, User, ExampleOneDbContext>
     {
-        /* Define a DbSet for each entity of the application */
-        
+        public DbSet<Product> Products { get; set; }    
         public ExampleOneDbContext(DbContextOptions<ExampleOneDbContext> options)
             : base(options)
         {
