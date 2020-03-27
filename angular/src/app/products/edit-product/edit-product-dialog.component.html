@@ -7,6 +7,10 @@
           <input matInput name="Name" [placeholder]="'Name' | localize" [(ngModel)]="product.name" required
             maxlength="128" />
         </mat-form-field>
+        <mat-form-field>
+          <input matInput type="numeric" name="Quantity" [placeholder]="'Quantity' | localize" [(ngModel)]="product.quantity" required
+            maxlength="128" />
+        </mat-form-field>
       </div>
     </div>
   </mat-dialog-content>
