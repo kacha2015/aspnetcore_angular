@@ -37,6 +37,8 @@ import { CreateUserDialogComponent } from '@app/users/create-user/create-user-di
 import { EditUserDialogComponent } from '@app/users/edit-user/edit-user-dialog.component';
 import { ChangePasswordComponent } from './users/change-password/change-password.component';
 import { ResetPasswordDialogComponent } from './users/reset-password/reset-password.component';
+import { CreateProductDialogComponent } from './products/create-product/create-product-dialog.component';
+import { EditProductDialogComponent } from './products/edit-product/edit-product-dialog.component';
 import { ProductsComponent } from './products/products.component';
 
 @NgModule({
@@ -64,7 +66,10 @@ import { ProductsComponent } from './products/products.component';
     EditUserDialogComponent,
     ChangePasswordComponent,
     ResetPasswordDialogComponent,
-    ProductsComponent
+    // products
+    ProductsComponent,
+    CreateProductDialogComponent,
+    EditProductDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -90,7 +95,10 @@ import { ProductsComponent } from './products/products.component';
     // users
     CreateUserDialogComponent,
     EditUserDialogComponent,
-    ResetPasswordDialogComponent
+    ResetPasswordDialogComponent,
+    // products
+    CreateProductDialogComponent,
+    EditProductDialogComponent,
   ]
 })
 export class AppModule {}

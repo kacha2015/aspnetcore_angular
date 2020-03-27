@@ -2,7 +2,7 @@
 
 namespace ExampleOne.Migrations
 {
-    public partial class AddProducts : Migration
+    public partial class AddProduct : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,8 +13,7 @@ namespace ExampleOne.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(nullable: true),
-                    Quantity = table.Column<int>(nullable: false),
-                    Price = table.Column<decimal>(nullable: false)
+                    Quantity = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

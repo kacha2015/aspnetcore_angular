@@ -9,10 +9,11 @@ namespace ExampleOne.EntityFrameworkCore
 {
     public class ExampleOneDbContext : AbpZeroDbContext<Tenant, Role, User, ExampleOneDbContext>
     {
-        public DbSet<Product> Products { get; set; }    
+       
         public ExampleOneDbContext(DbContextOptions<ExampleOneDbContext> options)
             : base(options)
         {
         }
+        public DbSet<Product> Products { get; set; }
     }
 }
